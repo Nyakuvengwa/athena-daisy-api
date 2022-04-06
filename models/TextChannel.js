@@ -10,4 +10,6 @@ const TextChannel = db.define('textChannels', {
     message: { type: Sequelize.STRING }
 });
 
+TextChannel.sync({ alter: true });
+
 module.exports = TextChannel;

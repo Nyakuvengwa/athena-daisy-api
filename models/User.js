@@ -17,4 +17,6 @@ const User = db.define('users', {
 //User.hasMany(PuzzleRating);
 //Role.belongsTo(User, {foreignKey: 'roleID'});
 
+User.sync({ alter: true })
+
 module.exports = User;
